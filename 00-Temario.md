@@ -1,4 +1,4 @@
-# Modelos de IA y sus aplicaciones. Temario (60h)
+# Modelos de IA y sus aplicaciones
 
 ---
 
@@ -31,21 +31,9 @@
 
 5. Herramientas y entornos de trabajo
 
+## Tema 3. NLP y Modelos de lenguaje
 
-## Tema 3. Modelos modernos de IA en producción
-
-1. Redes neuronales profundas
-
-2. Visión por computador
-
-3. Modelos generativos
-
-4. Modelos basados en Transformers
-
-
-## Tema 4. Automatización con modelos de lenguaje
-
-1. De NLP clásico a LLMs
+1. De NLP clásico a LLMs: Modelos basados en Transformers
 
 2. Chatbots y asistentes virtuales
 
@@ -56,18 +44,16 @@
 5. Riesgos y limitaciones
 
 
-## Tema 5. Aplicaciones sectoriales de la IA
+## Tema 4. Modelos modernos de IA en producción
 
-1. Salud y biomedicina
+1. Introducción a la IA moderna: Del machine learning clásico a los modelos basados en deep learning y LLM.
+2. Arquitecturas avanzadas: Redes profundas (CNN, RNN, Transformers), ensembles (XGBoost, Random Forest), y LLMs.
+3. Ciclo de vida en producción: Entrenamiento, despliegue, inferencia en tiempo real y batch, actualización de modelos.
+4. MLOps y automatización: Pipelines de datos, integración continua (CI/CD), orquestación de experimentos.
+5. Escalabilidad y rendimiento: Optimización de modelos, cuantización, uso de GPUs/TPUs, inferencia distribuida.
+6. Monitorización y mantenimiento: Detección de *drift*, métricas en producción, retraining y versionado de modelos.
 
-2. Industria y logística
-
-3. Finanzas y marketing
-
-4. Sector público y smart cities
-
-
-## Tema 6. Ética, sesgos y gobernanza de la IA
+## Tema 5. Ética, sesgos y gobernanza de la IA
 
 1. Sesgos algorítmicos
 
@@ -76,6 +62,16 @@
 3. Regulación y gobernanza
 
 4. Impactos sociales y laborales
+
+## Tema 6. Aplicaciones sectoriales de la IA
+
+1. Salud y biomedicina
+
+2. Industria y logística
+
+3. Finanzas y marketing
+
+4. Sector público y smart cities
 
 
 ## Tema 7. Tendencias emergentes y proyectos aplicados
@@ -87,7 +83,6 @@
 3. Computación cuántica e inspiración neurocientífica
 
 4. Proyecto final aplicado
-
 
 
 
