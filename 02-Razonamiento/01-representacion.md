@@ -2938,12 +2938,5 @@ La adopción de **infraestructuras distribuidas** y servicios en **la nube** per
 
 
 
-------
 
-### 2.5. Herramientas y entornos prácticos
-
-
-
-- **Neo4j y RDF:** construcción de grafos de conocimiento.
-- **Ejemplos sencillos de redes bayesianas** con librerías como `pgmpy`.
 
