@@ -14,7 +14,7 @@ Dentro de este panorama aparece el **aprendizaje automático (machine learning)*
 
 Este marco de clasificación permite entender que la IA es más amplia que el machine learning, y que a su vez el deep learning constituye solo una parte de este último, coexistiendo con otras corrientes igualmente válidas que abordan el problema de la inteligencia desde perspectivas simbólicas, evolutivas o probabilísticas.
 
-<img src="/Users/micasa/Library/CloudStorage/GoogleDrive-sebamendoza.ia@gmail.com/Mi unidad/apuntes_IA_2025/modelos_ia_101_2025/01-Fundamentos/assets/image-20250907143101564.png" alt="image-20250907143101564" style="zoom: 50%;" />
+<img src="./assets/image-20250907143101564.png" alt="image-20250907143101564" style="zoom: 50%;" />
 
 ## Algunos conceptos básicos: agente, entorno, percepción, racionalidad, razonamiento
 
@@ -32,7 +32,7 @@ La **racionalidad** se refiere a la capacidad del agente de tomar decisiones ori
 
 El **razonamiento**, por su parte, alude al proceso interno mediante el cual el agente selecciona y justifica sus acciones. Este razonamiento puede adoptar diferentes formas: en la **IA simbólica**, se realiza mediante la aplicación de reglas lógicas y motores de inferencia; en la **IA probabilística**, se basa en cálculos estadísticos que estiman la probabilidad de éxito de cada opción; en la **IA conexionista**, se apoya en modelos que aprenden patrones de comportamiento a partir de datos. Cada uno de estos enfoques ofrece ventajas y limitaciones, y en la práctica muchos sistemas modernos combinan más de uno para lograr un comportamiento más robusto.
 
-<img src="/Users/micasa/Library/CloudStorage/GoogleDrive-sebamendoza.ia@gmail.com/Mi unidad/apuntes_IA_2025/modelos_ia_101_2025/01-Fundamentos/assets/image-20250907143407989.png" alt="image-20250907143407989" style="zoom:67%;" />
+<img src="./assets/image-20250907143407989.png" alt="image-20250907143407989" style="zoom:67%;" />
 
 ## Qué es un modelo de IA y cómo se caracteriza
 
@@ -50,7 +50,7 @@ En definitiva, un modelo de IA actúa como una **simplificación operativa de la
 
 > **Ejemplo**: Un sistema de detección de fraude en transacciones bancarias utiliza como entrada los registros de pagos (cantidad, lugar, hora, dispositivo). A través de un modelo supervisado, aprende a distinguir entre operaciones normales y sospechosas. Su salida es una etiqueta que clasifica la operación como “legítima” o “fraudulenta”. Aunque el modelo no entiende el contexto social ni la psicología del fraude, su abstracción matemática es suficiente para reducir riesgos en la práctica.
 
-<img src="/Users/micasa/Library/CloudStorage/GoogleDrive-sebamendoza.ia@gmail.com/Mi unidad/apuntes_IA_2025/modelos_ia_101_2025/01-Fundamentos/assets/image-20250907144312467.png" alt="image-20250907144312467" style="zoom:67%;" />
+<img src="./assets/image-20250907144312467.png" alt="image-20250907144312467" style="zoom:67%;" />
 
 ------
 
@@ -113,7 +113,7 @@ Se conciben como **agentes inteligentes** que buscan maximizar recompensas en fu
 
 
 
-<img src="/Users/micasa/Library/CloudStorage/GoogleDrive-sebamendoza.ia@gmail.com/Mi unidad/apuntes_IA_2025/modelos_ia_101_2025/01-Fundamentos/assets/image-20250910103004990.png" alt="image-20250910103004990" style="zoom:80%;" />
+<img src="./assets/image-20250910103004990.png" alt="image-20250910103004990" style="zoom:80%;" />
 
 
 
@@ -135,7 +135,7 @@ En resumen, a diferencia de otras definiciones, en esta se enfatizan tres rasgos
 
 
 
-<img src="/Users/micasa/Library/CloudStorage/GoogleDrive-sebamendoza.ia@gmail.com/Mi unidad/apuntes_IA_2025/modelos_ia_101_2025/01-Fundamentos/assets/image-20250910103426459.png" alt="image-20250910103426459" style="zoom:80%;" />
+<img src="./assets/image-20250910103426459.png" alt="image-20250910103426459" style="zoom:80%;" />
 
 
 
