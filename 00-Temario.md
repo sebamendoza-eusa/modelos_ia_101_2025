@@ -1,4 +1,4 @@
-# Introducción a la IA y sus aplicaciones. Temario (60h)
+# Modelos de IA y sus aplicaciones. Temario (60h)
 
 ---
 
