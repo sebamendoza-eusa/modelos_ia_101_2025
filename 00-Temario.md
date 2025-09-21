@@ -2,97 +2,92 @@
 
 ---
 
-## 1. Fundamentos y paradigmas de la Inteligencia Artificial
+## Tema 1. Fundamentos y paradigmas de la Inteligencia Artificial
 
-Definiciones y conceptos clave
+1. Definiciones y conceptos clave
 
-Historia y evolución de la IA
+2. Historia y evolución de la IA
 
-Paradigmas principales
+3. Paradigmas principales
 
-IA débil vs. IA general
+4. IA débil vs. IA general
 
-Componentes de un modelo de IA
+5. Componentes de un modelo de IA
 
-Panorama de aplicaciones actuales
+6. Panorama de aplicaciones actuales
 
-Desafíos éticos y técnicos
+7. Desafíos éticos y técnicos
 
-------
 
-## 2. Representación del conocimiento y razonamiento
+## Tema 2. Representación del conocimiento y razonamiento
 
-Representación simbólica
+1. Representación simbólica
 
-Sistemas expertos
+2. Sistemas expertos
 
-Grafos de conocimiento
+3. Grafos de conocimiento
 
-Razonamiento probabilístico
+4. Razonamiento probabilístico
 
-Herramientas y entornos de trabajo
+5. Herramientas y entornos de trabajo
 
-------
 
-## 3. Modelos modernos de IA en producción
+## Tema 3. Modelos modernos de IA en producción
 
-Redes neuronales profundas
+1. Redes neuronales profundas
 
-Visión por computador
+2. Visión por computador
 
-Modelos generativos
+3. Modelos generativos
 
-Modelos basados en Transformers
+4. Modelos basados en Transformers
 
-------
 
-## 4. Automatización con modelos de lenguaje
+## Tema 4. Automatización con modelos de lenguaje
 
-De NLP clásico a LLMs
+1. De NLP clásico a LLMs
 
-Chatbots y asistentes virtuales
+2. Chatbots y asistentes virtuales
 
-Generación automática de texto e informes
+3. Generación automática de texto e informes
 
-Integración en procesos empresariales
+4. Integración en procesos empresariales
 
-Riesgos y limitaciones
+5. Riesgos y limitaciones
 
-------
 
-## 5. Aplicaciones sectoriales de la IA
+## Tema 5. Aplicaciones sectoriales de la IA
 
-Salud y biomedicina
+1. Salud y biomedicina
 
-Industria y logística
+2. Industria y logística
 
-Finanzas y marketing
+3. Finanzas y marketing
 
-Sector público y smart cities
+4. Sector público y smart cities
 
-------
 
-## 6. Ética, sesgos y gobernanza de la IA
+## Tema 6. Ética, sesgos y gobernanza de la IA
 
-Sesgos algorítmicos
+1. Sesgos algorítmicos
 
-Explicabilidad y transparencia (XAI)
+2. Explicabilidad y transparencia (XAI)
 
-Regulación y gobernanza
+3. Regulación y gobernanza
 
-Impactos sociales y laborales
+4. Impactos sociales y laborales
 
-------
 
-## 7. Tendencias emergentes y proyectos aplicados
+## Tema 7. Tendencias emergentes y proyectos aplicados
 
- IA multimodal y agentes autónomos
+1.  IA multimodal y agentes autónomos
 
-Green AI y sostenibilidad
+2. Green AI y sostenibilidad
 
-Computación cuántica e inspiración neurocientífica
+3. Computación cuántica e inspiración neurocientífica
 
-Proyecto final aplicado
+4. Proyecto final aplicado
+
 
 
 
