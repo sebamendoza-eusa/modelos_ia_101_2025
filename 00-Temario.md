@@ -47,10 +47,15 @@
 ## Tema 4. Modelos modernos de IA en producción
 
 1. Introducción a la IA moderna: Del machine learning clásico a los modelos basados en deep learning y LLM.
+
 2. Arquitecturas avanzadas: Redes profundas (CNN, RNN, Transformers), ensembles (XGBoost, Random Forest), y LLMs.
+
 3. Ciclo de vida en producción: Entrenamiento, despliegue, inferencia en tiempo real y batch, actualización de modelos.
+
 4. MLOps y automatización: Pipelines de datos, integración continua (CI/CD), orquestación de experimentos.
+
 5. Escalabilidad y rendimiento: Optimización de modelos, cuantización, uso de GPUs/TPUs, inferencia distribuida.
+
 6. Monitorización y mantenimiento: Detección de *drift*, métricas en producción, retraining y versionado de modelos.
 
 ## Tema 5. Ética, sesgos y gobernanza de la IA
