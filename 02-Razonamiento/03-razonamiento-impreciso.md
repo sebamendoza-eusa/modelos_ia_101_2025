@@ -292,7 +292,7 @@ Y esto significa que el grado de pertenencia del elemento `x` al conjunto `A OR 
 
 Por último señalar que también existe un relación de equivalencia entre la **operación de complemento difuso** y el operador **NOT**. En lógica difusa, la operación de complemento permite representar la idea de "no pertenencia" de un elemento a un conjunto difuso, similar a cómo la negación indica que una proposición no es verdadera.
 
-La fórmula para calcular el complemento de un grado de pertenencia $ \mu_A(x) $ es:
+La fórmula para calcular el complemento de un grado de pertenencia $\mu_A(x)$ es:
 
 $$
 \mu_{\text{NOT A}}(x) = 1 - \mu_A(x)
@@ -300,8 +300,8 @@ $$
 
 donde:
 
-- $ \mu_A(x) $ es el grado de pertenencia del elemento $ x $ en el conjunto difuso $ A $,
-- $ \mu_{\text{NOT A}}(x) $ es el grado de pertenencia de $ x $ en el conjunto complementario de $ A $.
+- $\mu_A(x)$ es el grado de pertenencia del elemento $x$ en el conjunto difuso $A$,
+- $\mu_{\text{NOT A}}(x)$ es el grado de pertenencia de $x$ en el conjunto complementario de $A$.
 
 > **Ejemplo:** Supongamos que tenemos un conjunto difuso que representa "temperatura ALTA", y para una temperatura de 25 °C, el grado de pertenencia a "temperatura ALTA" es 0.7. El complemento difuso de "temperatura ALTA" representaría "temperatura NO ALTA", y su cálculo sería:
 > 
@@ -348,7 +348,7 @@ La **desfuzzificación** es la fase final y convierte la salida difusa agregada 
 
 Al final de lo que se trata es de transformar el conjunto difuso de salida en un valor preciso, lo cual permite que el sistema interactúe con el entorno de manera específica. Para ejecutar esta transformación existen una serie de métodos matemáticos, de entre los cuales podemos destacar los siguientes:
 
-**Centro de Gravedad (o Centroide): ** Es el método de más utilizado. Calcula el "centro de masa" del área bajo la curva de la función de pertenencia de la salida difusa. La fórmula para calcular el centro de gravedad es:
+**Centro de Gravedad (o Centroide):** Es el método de más utilizado. Calcula el "centro de masa" del área bajo la curva de la función de pertenencia de la salida difusa. La fórmula para calcular el centro de gravedad es:
 
 $$
 z^* = \frac{\int z \cdot \mu_{\text{salida}}(z) \, dz}{\int \mu_{\text{salida}}(z) \, dz}
@@ -554,13 +554,13 @@ $$
 P(A \cup B) = P(A) + P(B) - P(A \cap B)
 $$
 
-> **Ejemplo:** En un dado, sea $ A $: obtener un número par ($A=\{2,4,6\}$) y $B$: obtener un número mayor que 4 ($B=\{5,6\}$). La **intersección** es $A \cap B = \{6\}$.
+> **Ejemplo:** En un dado, sea $A$: obtener un número par ($A=\{2,4,6\}$) y $B$: obtener un número mayor que 4 ($B=\{5,6\}$). La **intersección** es $A \cap B = \{6\}$.
 > Usando la regla de Laplace, $P(A) = 3/6$, $P(B) = 2/6$, y $P(A \cap B) = 1/6$.
 > Entonces, $P(A \cup B) = \frac{3}{6} + \frac{2}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3}$.
 
 ##### Intersección de Eventos
 
-La **intersección** de los eventos $ A $ y $B$ son los resultados que están en ambos. Representa la ocurrencia simultánea de ambos eventos.
+La **intersección** de los eventos $A$ y $B$ son los resultados que están en ambos. Representa la ocurrencia simultánea de ambos eventos.
 
 $$
 P(A \cap B)
@@ -570,7 +570,7 @@ $$
 
 ##### Complemento de un Evento
 
-El **complemento** de un evento $ A $ son los resultados en el espacio muestral que no están en $ A $. Representa la no ocurrencia de $ A $.
+El **complemento** de un evento $A$ son los resultados en el espacio muestral que no están en $ A $. Representa la no ocurrencia de $A$.
 
 $$
 P(A^c) = 1 - P(A)
@@ -591,23 +591,23 @@ que satisface tres axiomas:
 1. **No negatividad:**
    Para todo evento $A \in \mathcal{F}$,
    
-   $$
-   P(A) \geq 0
-   $$
+$$
+P(A) \geq 0
+$$
 
 2. **Normalización:**
    El suceso seguro (todo el espacio muestral) tiene probabilidad 1,
    
-   $$
-   P(\Omega) = 1
-   $$
+$$
+P(\Omega) = 1
+$$
 
 3. **Aditividad numerable (o σ-aditividad):**
    Si $A_1, A_2, A_3, \dots, A_n$ son sucesos mutuamente excluyentes (disjuntos), entonces
    
-   $$
-   P\Big(\bigcup_{i=1}^{n} A_i\Big) = \sum_{i=1}^{n} P(A_i)
-   $$
+$$
+P\Big(\bigcup_{i=1}^{n} A_i\Big) = \sum_{i=1}^{n} P(A_i)
+$$
 
 Estos axiomas establecen las bases de la teoría de probabilidad y permiten realizar cálculos con eventos simples y compuestos en experimentos aleatorios. En IA, estos conceptos son cruciales para modelar y manejar la incertidumbre en la toma de decisiones.
 
@@ -1205,39 +1205,39 @@ Esta red indica que la **Enfermedad** es la causa probable de **Fiebre** y **Dol
 
 1. **Descomponer la probabilidad deseada**: Para calcular $P(F | D) $, utilizamos la definición de probabilidad condicional:
 
-   $$
-    P(F | D) = \frac{P(F \cap D)}{P(D)}
-   $$
+$$
+P(F | D) = \frac{P(F \cap D)}{P(D)}
+$$
 
 2. **Expresar la probabilidad conjunta en términos de la red**: En una red bayesiana, la probabilidad conjunta de las variables se descompone en probabilidades condicionales. Así, para esta red tenemos:
 
-   $$
-    P(F, D) = \sum_{E} P(F | E) \cdot P(D | E) \cdot P(E)
-   $$
+$$
+P(F, D) = \sum_{E} P(F | E) \cdot P(D | E) \cdot P(E)
+$$
 
     Sumamos las probabilidades conjuntas para cada posible valor de $E$:
 
-   $$
-    P(F \cap D) = P(F = \text{sí}, D = \text{sí}) = (0.8 \cdot 0.7 \cdot 0.1) + (0.2 \cdot 0.1 \cdot 0.9) = 0.056 + 0.018 = 0.074
-   $$
+$$
+P(F \cap D) = P(F = \text{sí}, D = \text{sí}) = (0.8 \cdot 0.7 \cdot 0.1) + (0.2 \cdot 0.1 \cdot 0.9) = 0.056 + 0.018 = 0.074
+$$
 
 3. **Calcular $P(D) $**: Sumamos las probabilidades de que haya dolor en ambos casos de $E$:
 
-   $$
-    P(D = \text{sí}) = P(D = \text{sí} | E = \text{sí}) \cdot P(E = \text{sí}) + P(D = \text{sí} | E = \text{no}) \cdot P(E = \text{no})
-   $$
+$$
+P(D = \text{sí}) = P(D = \text{sí} | E = \text{sí}) \cdot P(E = \text{sí}) + P(D = \text{sí} | E = \text{no}) \cdot P(E = \text{no})
+$$
 
     Sustituyendo:
 
-   $$
-    P(D = \text{sí}) = (0.7 \cdot 0.1) + (0.1 \cdot 0.9) = 0.07 + 0.09 = 0.16
-   $$
+$$
+P(D = \text{sí}) = (0.7 \cdot 0.1) + (0.1 \cdot 0.9) = 0.07 + 0.09 = 0.16
+$$
 
 4. **Calcular $P(F | D) $**: Finalmente, aplicamos la fórmula de probabilidad condicional:
 
-   $$
-    P(F | D) = \frac{P(F = \text{sí}, D = \text{sí})}{P(D = \text{sí})} = \frac{0.074}{0.16} \approx 0.4625
-   $$
+$$
+P(F | D) = \frac{P(F = \text{sí}, D = \text{sí})}{P(D = \text{sí})} = \frac{0.074}{0.16} \approx 0.4625
+$$
 
 En conclusión, la probabilidad de fiebre dado que la persona presenta dolor es aproximadamente 46.25%. Este tipo de cálculo facilita la inferencia en redes bayesianas, lo que permite realizar diagnósticos o tomar decisiones en función de la probabilidad condicional en un sistema con dependencias probabilísticas.
 
@@ -1276,39 +1276,39 @@ Esta red indica que la **Transacción** (T) puede afectar la probabilidad de que
 
 1. **Descomposición de la probabilidad deseada**: Queremos calcular $P(H | M)$ usando probabilidad condicional:
 
-   $$
-    P(H | M) = \frac{P(H \cap M)}{P(M)}
-   $$
+$$
+P(H | M) = \frac{P(H \cap M)}{P(M)}
+$$
 
 2. **Expresión de la probabilidad conjunta en términos de la red**: Utilizamos la descomposición en la red:
 
-   $$
-    P(H, M) = \sum_{T} P(H | T) \cdot P(M | T) \cdot P(T)
-   $$
+$$
+P(H, M) = \sum_{T} P(H | T) \cdot P(M | T) \cdot P(T)
+$$
 
 3. **Cálculo de $P(H \cap M) $**: Sumamos las probabilidades conjuntas para cada valor de $T$:
 
-   $$
-    P(H = \text{sí}, M = \text{alto}) = (0.7 \cdot 0.8 \cdot 0.05) + (0.1 \cdot 0.2 \cdot 0.95) = 0.028 + 0.019 = 0.047
-   $$
+$$
+P(H = \text{sí}, M = \text{alto}) = (0.7 \cdot 0.8 \cdot 0.05) + (0.1 \cdot 0.2 \cdot 0.95) = 0.028 + 0.019 = 0.047
+$$
 
 4. **Cálculo de $P(M) $**: Sumamos las probabilidades de que el monto sea alto en ambos casos de $T$:
 
-   $$
-    P(M = \text{alto}) = P(M = \text{alto} | T = \text{fraudulenta}) \cdot P(T = \text{fraudulenta}) + P(M = \text{alto} | T = \text{no fraudulenta}) \cdot P(T = \text{no fraudulenta})
-   $$
+$$
+P(M = \text{alto}) = P(M = \text{alto} | T = \text{fraudulenta}) \cdot P(T = \text{fraudulenta}) + P(M = \text{alto} | T = \text{no fraudulenta}) \cdot P(T = \text{no fraudulenta})
+$$
 
     Sustituyendo:
 
-   $$
-    P(M = \text{alto}) = (0.8 \cdot 0.05) + (0.2 \cdot 0.95) = 0.04 + 0.19 = 0.23
-   $$
+$$
+P(M = \text{alto}) = (0.8 \cdot 0.05) + (0.2 \cdot 0.95) = 0.04 + 0.19 = 0.23
+$$
 
 5. **Cálculo de $P(H | M) $**: Finalmente, aplicamos la fórmula de probabilidad condicional:
 
-   $$
-    P(H | M) = \frac{P(H = \text{sí}, M = \text{alto})}{P(M = \text{alto})} = \frac{0.047}{0.23} \approx 0.204
-   $$
+$$
+P(H | M) = \frac{P(H = \text{sí}, M = \text{alto})}{P(M = \text{alto})} = \frac{0.047}{0.23} \approx 0.204
+$$
 
 La probabilidad de que una transacción ocurra en un horario inusual dado que el monto es elevado es aproximadamente 20.4%. Esta inferencia es útil para sistemas de detección de fraudes, ya que permite calcular probabilidades condicionales y evaluar la presencia de indicios de fraude en función de patrones de datos.
 
@@ -1343,15 +1343,15 @@ Ahora usamos el teorema de Bayes para calcular la **probabilidad posterior** de 
 
 1. **Calcular el término de evidencia** $P(\text{roja})$, que es la probabilidad total de sacar una bola roja, sumando las probabilidades para cada tipo de urna:
 
-   $$
-    P(\text{roja}) = P(\text{roja} | \text{A}) \cdot P(\text{A}) + P(\text{roja} | \text{B}) \cdot P(\text{B})
-   $$
+$$
+P(\text{roja}) = P(\text{roja} | \text{A}) \cdot P(\text{A}) + P(\text{roja} | \text{B}) \cdot P(\text{B})
+$$
 
     Sustituyendo los valores:
 
-   $$
-    P(\text{roja}) = (0.7 \cdot 0.5) + (0.3 \cdot 0.5) = 0.35 + 0.15 = 0.5
-   $$
+$$
+P(\text{roja}) = (0.7 \cdot 0.5) + (0.3 \cdot 0.5) = 0.35 + 0.15 = 0.5
+$$
 
 2. **Calcular las probabilidades posteriores** para cada tipo de urna:
 
