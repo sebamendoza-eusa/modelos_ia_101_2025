@@ -61,8 +61,6 @@ Como se ha comentado al principio de la sección, podemos encontrar tres tipos d
 Modelos basados en lógica difusa
 ---
 
----
-
 La **lógica difusa**, desarrollada por Lotfi Zadeh en 1965, surge como una extensión de la **lógica clásica** para manejar conceptos vagos o imprecisos, que no pueden ser representados adecuadamente por valores binarios (verdadero o falso). A diferencia de la lógica clásica, que se basa en un principio de exclusión mutua (algo es o verdadero o falso), la lógica difusa permite la existencia de grados de verdad, ofreciendo una representación más flexible y matizada de la realidad.
 
 Este enfoque es particularmente útil en problemas donde las fronteras entre categorías no son claras, como por ejemplo cuando hablamos de "temperatura cálida", "nivel de satisfacción", o "distancia cercana". En estos casos, la precisión absoluta de los valores es difícil de definir, lo que convierte a la lógica difusa en una herramienta eficaz para la toma de decisiones basada en información ambigua o incompleta.
@@ -114,18 +112,21 @@ Por último, las **funciones sigmoides** se utilizan para representar situacione
 > $$
 > G(x) = e^{-\frac{(x - \mu)^2}{2\sigma^2}}
 > $$
+> 
 > Donde:
 >
-> - $ x $ es la variable de entrada.
+> - $x$ es la variable de entrada.
 > - $\mu$ es el valor central o la media de la función (el punto donde la función alcanza su valor máximo).
 > - $\sigma$ es la desviación estándar, que controla el ancho de la curva; cuanto mayor es $\sigma$, más ancha es la campana.
 >
 > En lógica difusa, la función gaussiana se utiliza para representar conjuntos donde el grado de pertenencia de un elemento disminuye gradualmente a medida que nos alejamos del valor central. Esto es útil en situaciones donde las transiciones entre categorías son difusas, sin límites claro.
 >
 > Una **función sigmoide** es una función matemática que tiene una forma de "S" suave y es ampliamente utilizada en diversos campos, incluida la inteligencia artificial y el aprendizaje automático. La característica principal de una función sigmoide es que convierte valores de entrada de un rango amplio en una salida que se encuentra dentro de un rango limitado, generalmente entre 0 y 1, lo que la hace útil para modelar transiciones suaves entre estados. Matemáticamente, una de las formas más comunes de la función sigmoide es la **sigmoide logística**, que se expresa como:
+>
 > $$
 > S(x) = \frac{1}{1 + e^{-x}}
 > $$
+> 
 > Esta función se utiliza frecuentemente en redes neuronales, donde ayuda a modelar probabilidades o a activar neuronas, y en sistemas de control difuso, donde es útil para representar transiciones suaves entre diferentes estados.
 
 #### Ejemplos de cálculo de función de pertenencia
@@ -186,15 +187,16 @@ $$
 
 donde:
 
-- \( x \) es la edad de la persona.
-- \( a \) es el valor de inflexión o centro de la función, que representa la edad a partir de la cual el grado de pertenencia disminuye notablemente. En este caso, consideremos \( a = 30 \).
-- \( b \) es un parámetro que controla la pendiente de la transición; cuanto mayor es \( b \), más gradual es la transición. Aquí usaremos \( b = 5 \).
+- $x$ es la edad de la persona.
+- $a$ es el valor de inflexión o centro de la función, que representa la edad a partir de la cual el grado de pertenencia disminuye notablemente. En este caso, consideremos $a = 30$.
+- $b$ es un parámetro que controla la pendiente de la transición; cuanto mayor es $b$, más gradual es la transición. Aquí usaremos $b = 5$..
 
 **Cálculo de grados de pertenencia**
 
 Vamos a calcular el grado de pertenencia para diferentes edades usando esta función sigmoide:
 
 **Si la persona tiene 20 años**, sustituyendo en la función: 
+
 $$
 \mu_{\text{joven}}(20) = \frac{1}{1 + e^{-(20 - 30) / 5}} \approx 0.12
 $$
@@ -206,12 +208,15 @@ Es decir, la pertenencia de 20 años a "persona joven" es aproximadamente 0.12.
 $$
 \mu_{\text{joven}}(30) = \frac{1}{1 + e^{-(30 - 30) / 5}} = \frac{1}{1 + e^0} = 0.5
 $$
+
    La pertenencia de 30 años a "persona joven" es 0.5, reflejando una transición.
 
 **Si la persona tiene 40 años**, sustituyendo en la función:
+
 $$
    \mu_{\text{joven}}(40) = \frac{1}{1 + e^{-(40 - 30) / 5}} \approx 0.88
 $$
+
    La pertenencia de 40 años a "persona joven" es aproximadamente 0.88.
 
 En este ejemplo vemos cómo la función de pertenencia sigmoide permite modelar la pertenencia al conjunto "persona joven" con una transición gradual en torno a los 30 años. Este tipo de función es especialmente útil para representar conceptos con bordes suaves, donde no existe una distinción clara entre pertenecer o no al conjunto.
@@ -221,9 +226,11 @@ En este ejemplo vemos cómo la función de pertenencia sigmoide permite modelar 
 En lógica difusa, una **regla difusa** es una instrucción que conecta condiciones imprecisas con conclusiones o acciones de forma aproximada, utilizando expresiones del lenguaje natural. Su propósito es trasladar el conocimiento humano, que a menudo se formula en términos vagos como “alto”, “bajo” o “moderado”, a un sistema formal que pueda procesarlo automáticamente.
 
 Una **regla difusa** se estructura en términos de "si-entonces", pero en lugar de trabajar con valores exactos, las reglas difusas utilizan grados de pertenencia para manejar la incertidumbre. La forma general de una regla difusa es:
+
 $$
 \text{Si \textbf{x} es \textbf{A} entonces \textbf{y} es \textbf{B}}
 $$
+
 Donde $x$ y $y$ son variables difusas, y $A$ y $B$ son conjuntos difusos definidos por funciones de pertenencia. El proceso de toma de decisiones se basa en la inferencia difusa, que evalúa estas reglas y produce una salida basada en los grados de verdad de las condiciones.
 
 > **Ejemplo**: En un sistema de control de velocidad, una regla difusa podría ser: "Si la inclinación de la carretera es leve y la velocidad es alta, entonces reducir la velocidad ligeramente". En este caso, las entradas (inclinación y velocidad) son variables difusas y la salida es una acción difusa (reducir la velocidad en un grado determinado).
@@ -237,23 +244,29 @@ Donde $x$ y $y$ son variables difusas, y $A$ y $B$ son conjuntos difusos definid
 Al igual que en la teoría de conjuntos clásica, en los conjuntos difusos se pueden realizar **operaciones** como la unión, intersección y complemento, aunque de manera generalizada para considerar los grados de pertenencia. ¿Por que es importante conocer cómo funcionan estas operaciones? Porque las operaciones con conjuntos difusos son la base para **combinar y manipular la información ambigua en reglas de lógica difusa**.
 
 Hemos visto en la sección anterior como en un sistema de lógica difusa, las reglas del tipo "Si… Entonces…" combinan diferentes conjuntos. Por ejemplo, en un sistema para el control de temperatura, se podría tener una regla del tipo
+
 $$
 \text{"Si la temperatura es \textbf{alta} y la humedad es \textbf{baja}, entonces la ventilación debe ser \textbf{media}"}
 $$
+
 Para aplicar esta regla, es necesario operar entre los conjuntos difusos "alta" y "baja". Las operaciones como la **intersección (AND)** y **unión (OR)** permiten combinar conjuntos difusos y establecer relaciones entre ellos en las reglas, lo que es crucial para definir la lógica del sistema. Para aplicar estas operaciones hay que realizar un proceso de **inferencia difusa** (o *fuzzyficación*), quiere decir que, por ejemplo el operador **AND** determinará **el grado mínimo de pertenencia** y que el operador **OR**, **el grado máximo**.
 
 En lógica difusa, los operadores **AND** y **OR** tienen una relación directa con las operaciones de **intersección** y **unión** de conjuntos difusos, respectivamente. Esta relación permite combinar diferentes grados de pertenencia de los conjuntos, simulando el razonamiento humano en situaciones de incertidumbre o imprecisión. Así, en lógica difusa, el operador **AND** corresponde a la operación de **intersección** entre conjuntos difusos. Cuando tenemos una regla que implica condiciones conjuntas, como "Si `A` y `B`", estamos evaluando la intersección entre los conjuntos `A` y `B`. Matemáticamente, la intersección se define tomando el **mínimo** de los grados de pertenencia de los conjuntos involucrados. Esto se expresa así:
+
 $$
 \mu_{\text{A AND B}}(x) = \min(\mu_A(x), \mu_B(x))
 $$
+
 Esto significa que el grado de pertenencia del elemento `x` al conjunto `A AND B` será el valor más bajo entre sus grados de pertenencia individuales en los conjuntos `A` y `B`. Este enfoque refleja el concepto de **restricción conjunta**, donde ambas condiciones deben cumplirse simultáneamente.
 
 En cuanto al operador **OR**, tenemos que en lógica difusa corresponde a la operación de **unión** entre conjuntos difusos. Cuando una regla difusa implica una condición alternativa, como "Si `A` o `B`", se está evaluando la unión entre los conjuntos `A` y `B`.
 
 Matemáticamente, la unión en lógica difusa se define como el **máximo** de los grados de pertenencia de los conjuntos involucrados:
+
 $$
 \mu_{\text{A OR B}}(x) = \max(\mu_A(x), \mu_B(x))
 $$
+
 Y esto significa que el grado de pertenencia del elemento `x` al conjunto `A OR B` será el mayor de sus grados de pertenencia en `A` o `B`. Este enfoque refleja el concepto de **alternativa permisiva**, donde basta con que una de las condiciones se cumpla.
 
 > **Ejemplo**: Imaginemos un sistema difuso que evalúa la temperatura y la humedad en un invernadero, donde:
@@ -262,6 +275,7 @@ Y esto significa que el grado de pertenencia del elemento `x` al conjunto `A OR 
 > - `Humedad ALTA` tiene un grado de pertenencia de 0.4.
 >
 > **Intersección (AND)**: Para evaluar "Si la temperatura es ALTA **y** la humedad es ALTA", aplicamos la intersección:
+> 
 > $$
 > \mu_{\text{ALTA AND ALTA}} = \min(0.7, 0.4) = 0.4
 > $$
@@ -269,6 +283,7 @@ Y esto significa que el grado de pertenencia del elemento `x` al conjunto `A OR 
 > Esto indica que el grado de pertenencia combinado de cumplir ambas condiciones simultáneamente es 0.4.
 >
 > **Unión (OR)**: Para evaluar "Si la temperatura es ALTA **o** la humedad es ALTA", aplicamos la unión:
+> 
 > $$
 > \mu_{\text{ALTA OR ALTA}} = \max(0.7, 0.4) = 0.7
 > $$
@@ -278,15 +293,18 @@ Y esto significa que el grado de pertenencia del elemento `x` al conjunto `A OR 
 Por último señalar que también existe un relación de equivalencia entre la **operación de complemento difuso** y el operador **NOT**. En lógica difusa, la operación de complemento permite representar la idea de "no pertenencia" de un elemento a un conjunto difuso, similar a cómo la negación indica que una proposición no es verdadera.
 
 La fórmula para calcular el complemento de un grado de pertenencia $ \mu_A(x) $ es:
+
 $$
 \mu_{\text{NOT A}}(x) = 1 - \mu_A(x)
 $$
+
 donde:
 
 - $ \mu_A(x) $ es el grado de pertenencia del elemento $ x $ en el conjunto difuso $ A $,
 - $ \mu_{\text{NOT A}}(x) $ es el grado de pertenencia de $ x $ en el conjunto complementario de $ A $.
 
 > **Ejemplo:** Supongamos que tenemos un conjunto difuso que representa "temperatura ALTA", y para una temperatura de 25 °C, el grado de pertenencia a "temperatura ALTA" es 0.7. El complemento difuso de "temperatura ALTA" representaría "temperatura NO ALTA", y su cálculo sería:
+> 
 > $$
 > \mu_{\text{NO ALTA}}(25) = 1 - 0.7 = 0.3
 > $$
@@ -331,9 +349,11 @@ La **desfuzzificación** es la fase final y convierte la salida difusa agregada 
 Al final de lo que se trata es de transformar el conjunto difuso de salida en un valor preciso, lo cual permite que el sistema interactúe con el entorno de manera específica. Para ejecutar esta transformación existen una serie de métodos matemáticos, de entre los cuales podemos destacar los siguientes:
 
 **Centro de Gravedad (o Centroide): ** Es el método de más utilizado. Calcula el "centro de masa" del área bajo la curva de la función de pertenencia de la salida difusa. La fórmula para calcular el centro de gravedad es:
+
 $$
 z^* = \frac{\int z \cdot \mu_{\text{salida}}(z) \, dz}{\int \mu_{\text{salida}}(z) \, dz}
 $$
+
 donde $z^*$ es el valor desfuzzificado, y $\mu_{\text{salida}}(z)$ representa el grado de pertenencia en el conjunto de salida.
 
 Este método es preciso y produce un valor medio representativo, por lo que es ideal para sistemas de control que requieren decisiones suaves y continuas.
@@ -427,9 +447,11 @@ Esto nos da los siguientes grados de pertenencia para cada nivel de calefacción
 - **Calefacción Alta**: 0.33
 
 Por último abordaríamos el proceso de **desfuzzificación**. Podremos aplicar alguno de los métodos reseñados más arriba. En concreto haremos uso del método del centroide. Así pues aplicamos la fórmula correspondiente:
+
 $$
 z^* = \frac{\sum z_i \cdot \mu_{\text{salida}}(z_i)}{\sum \mu_{\text{salida}}(z_i)}
 $$
+
 Donde $z_i$ es el valor de calefacción en cada conjunto, y $\mu_{\text{salida}}(z_i)$ es el grado de pertenencia asociado:
 
 - Calefacción Alta (80 %) con grado de pertenencia 0.33
@@ -437,9 +459,11 @@ Donde $z_i$ es el valor de calefacción en cada conjunto, y $\mu_{\text{salida}}
 - Calefacción Baja (20 %) con grado de pertenencia 0
 
 Entonces:
+
 $$
 z^* = \frac{(80 \times 0.33) + (50 \times 0.67) + (20 \times 0)}{0.33 + 0.67 + 0}
 $$
+
 Calculamos cada término:
 
 1. $80 \times 0.33 = 26.4$
@@ -447,6 +471,7 @@ Calculamos cada término:
 3. $20 \times 0 = 0$
 
 Sumamos los valores:
+
 $$
 z^* = \frac{26.4 + 33.5 + 0}{0.33 + 0.67} = \frac{59.9}{1} = 59.9
 $$
@@ -514,6 +539,7 @@ La forma más sencilla y común de calcular la probabilidad de un evento ($ A $)
 $$
 P(A) = \frac{\text{Número de casos favorables}}{\text{Número total de resultados posibles}}
 $$
+
 Por ejemplo, si lanzas un dado de seis caras, cada número tiene la misma probabilidad de salir. La probabilidad de obtener un 4 es de $1/6$, ya que hay un solo resultado favorable de seis posibles.
 
 #### **Eventos y Operaciones entre Eventos**
@@ -539,6 +565,7 @@ La **intersección** de los eventos $ A $ y $B$ son los resultados que están en
 $$
 P(A \cap B)
 $$
+
 **Ejemplo:** Si $ A $ es obtener un número par y $B$ es obtener un número mayor que 3, la intersección es $A \cap B = \{4, 6\}$. Por la regla de Laplace, $P(A \cap B) = 2/6 = 1/3$.
 
 ##### Complemento de un Evento
@@ -563,18 +590,21 @@ que satisface tres axiomas:
 
 1. **No negatividad:**
    Para todo evento $A \in \mathcal{F}$,
+   
    $$
    P(A) \geq 0
    $$
 
 2. **Normalización:**
    El suceso seguro (todo el espacio muestral) tiene probabilidad 1,
+   
    $$
    P(\Omega) = 1
    $$
 
 3. **Aditividad numerable (o σ-aditividad):**
    Si $A_1, A_2, A_3, \dots, A_n$ son sucesos mutuamente excluyentes (disjuntos), entonces
+   
    $$
    P\Big(\bigcup_{i=1}^{n} A_i\Big) = \sum_{i=1}^{n} P(A_i)
    $$
@@ -1490,8 +1520,6 @@ En los modelos de IA, la entropía se utiliza para medir la incertidumbre en la 
 En **sistemas de razonamiento impreciso**, como aquellos que usan **teoría de la posibilidad** o **lógica difusa**, aunque no se mide directamente con la entropía de Shannon, se busca capturar el concepto de incertidumbre a través de grados de pertenencia o niveles de posibilidad, los cuales también reflejan la imprevisibilidad o el grado de información incompleta en el sistema
 
 Comparación con otros enfoques de IA
----
-
 ---
 
 Los **sistemas de razonamiento impreciso**, como las **redes bayesianas**, la **lógica difusa** y los **modelos basados en la teoría de la posibilidad**, proporcionan herramientas potentes para gestionar la incertidumbre en situaciones donde la información es incompleta, ruidosa o ambigua. En esta sección, se comparan estos modelos con otros enfoques de la **Inteligencia Artificial (IA)**, como el **aprendizaje automático** y los **sistemas expertos**, y se exploran las posibles integraciones con enfoques híbridos.
